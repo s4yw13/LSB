@@ -1,8 +1,8 @@
 from PIL import Image
 
-red_img = Image.open("red_channel_output.png")
-green_img = Image.open("green_channel_output.png")
-blue_img = Image.open("blue_channel_output.png")
+red_img = Image.open("demo/red_channel_output.png")
+green_img = Image.open("demo/green_channel_output.png")
+blue_img = Image.open("demo/blue_channel_output.png")
 
 width, height = red_img.size
 
@@ -17,4 +17,4 @@ for x in range(width):
         pixel_color = (r_pixel * 255, g_pixel * 255, b_pixel * 255)
         final_img.putpixel((x, y), pixel_color)
 
-final_img.save("merged_image.png")
+final_img.save("demo/merged_image.png")

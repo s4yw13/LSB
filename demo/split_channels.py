@@ -1,7 +1,7 @@
 from PIL import Image
 
 
-image = Image.open("image.png")
+image = Image.open("images/image.png")
 
 width, height = image.size
 
@@ -32,6 +32,6 @@ new_r_img = process_channel(r_channel, (255, 0, 0))
 new_g_img = process_channel(g_channel, (0, 255, 0))
 new_b_img = process_channel(b_channel, (0, 0, 255))
 
-new_r_img.save('red_channel_output.png')
-new_g_img.save('green_channel_output.png')
-new_b_img.save('blue_channel_output.png')
+new_r_img.save('demo/red_channel_output.png')
+new_g_img.save('demo/green_channel_output.png')
+new_b_img.save('demo/blue_channel_output.png')
